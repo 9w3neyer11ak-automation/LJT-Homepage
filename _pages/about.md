@@ -32,6 +32,18 @@ I am fortunate to have collaborated with researchers at MINIMAX, Tencent WXG, an
 
 - Zhiyuan Honor Scholarship, Shanghai Jiao Tong University
 
+## Selected Publications
+
+See the [Publications](/publications/) page for the full list.
+
+<ul>
+  {% for post in site.publications reversed %}
+    {% if post.title contains "SynLogic" or post.title contains "Perception Bottleneck" or post.title contains "Universal Truthfulness" %}
+      {% include archive-single.html type="page" %}
+    {% endif %}
+  {% endfor %}
+</ul>
+
 ## Contact
 
 - Email: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
